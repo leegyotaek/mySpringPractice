@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+
 
 import java.util.List;
 
@@ -21,14 +21,38 @@ public class CustomerController {
 
 	@GetMapping("/list")
 	public String listCustomers(Model theModel) {
-
 		List<Customer> customers = customeService.getCustomers();
-
 		theModel.addAttribute("customers", customers);
-
 		return "list-customers";
-
 	}
+
+	@GetMapping("/showFormForAdd")
+	public String showFormForAdd(Model theModel){
+		Customer customer = new Customer();
+		theModel.addAttribute("customer", customer);
+		return "customer-form";
+	}
+
+	@PostMapping("/saveCustomer")
+	public String saveCustomer(@ModelAttribute("customer") Customer theCustomer){
+
+		// save the Customer using ourt service
+
+		customeService.saveCustomer(theCustomer);
+
+		return "redirect:/customer/list";
+	}
+
+	@GetMapping("/showFormForUpdate")
+	public String showFormForUpdate(@RequestParam("customerId") int theId, Model theModel){
+		Customer theCustomer = customeService.getCustomer(theId);
+
+		theModel.addAttribute("customer", theCustomer);
+
+		return "customer-form";
+	}
+
+
 	
 }
 

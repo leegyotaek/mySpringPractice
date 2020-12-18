@@ -7,5 +7,7 @@ import java.util.List;
 public interface CustomeService {
 
     List<Customer> getCustomers();
+    void saveCustomer(Customer theCustomer);
+    Customer getCustomer(int theId);
 
 }
