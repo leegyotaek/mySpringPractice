@@ -6,22 +6,18 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e6c162e-78a4-457b-93ac-8b7ac47a319d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/luv2code/springdemo/service/CustomeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/luv2code/springdemo/service/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/css/add-customer-style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/css/style.css" afterDir="false" />
+    <list default="true" id="6e6c162e-78a4-457b-93ac-8b7ac47a319d" name="Default Changelist" comment="add update customers function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/web_customer_tracker_war_exploded/WEB-INF/classes/com/luv2code/springdemo/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_customer_tracker_war_exploded/WEB-INF/classes/com/luv2code/springdemo/controller/CustomerController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/web_customer_tracker_war_exploded/WEB-INF/spring-mvc-crud-demo-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_customer_tracker_war_exploded/WEB-INF/spring-mvc-crud-demo-servlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/web_customer_tracker_war_exploded/WEB-INF/view/list-customers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_customer_tracker_war_exploded/WEB-INF/view/list-customers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_customer_tracker_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_customer_tracker_war_exploded/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/web-customer-tracker/com/luv2code/springdemo/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/web-customer-tracker/com/luv2code/springdemo/controller/CustomerController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/luv2code/springdemo/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luv2code/springdemo/controller/CustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/luv2code/springdemo/dao/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luv2code/springdemo/dao/CustomerDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/luv2code/springdemo/dao/CustomerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luv2code/springdemo/dao/CustomerDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/spring-mvc-crud-demo-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/spring-mvc-crud-demo-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/luv2code/springdemo/service/CustomeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luv2code/springdemo/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/luv2code/springdemo/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luv2code/springdemo/service/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/list-customers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/list-customers.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,11 +25,26 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -53,12 +64,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/resources/css" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../스프링/04-spring-mvc-crud-5/solution-code-spring-mvc-CRUD-CRM-update-customer/WebContent/WEB-INF/view/list-customers.jsp" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../스프링/04-spring-mvc-crud-5/solution-code-spring-mvc-CRUD-CRM-update-customer/WebContent/WEB-INF/view/list-customers.jsp" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -83,6 +95,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.41" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.41" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="COMMON_VM_ARGUMENTS" value="-Duser.language=en -Duser.region=us" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -168,7 +181,11 @@
       <updated>1607950431797</updated>
       <workItem from="1607950435164" duration="3077000" />
       <workItem from="1608021612666" duration="4950000" />
-      <workItem from="1608116475256" duration="4077000" />
+      <workItem from="1608116475256" duration="4198000" />
+      <workItem from="1608192686461" duration="6798000" />
+      <workItem from="1608271227164" duration="7539000" />
+      <workItem from="1608283531454" duration="412000" />
+      <workItem from="1608389900828" duration="2358000" />
     </task>
     <task id="LOCAL-00001" summary="create CustomeDao, CustomerDaoImpl&#10;create CustomerController&#10;creat jsp Page : list-customer.jsp">
       <created>1608036442296</created>
@@ -177,7 +194,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608036442297</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add service layer(CustomerService)&#10;add css(but it doesn't work at the moment)&#10;add a new button for for adding customers(but it also doesn't at the moment)">
+      <created>1608120683950</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608120683950</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add update customers function">
+      <created>1608283681556</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608283681556</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +229,29 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create CustomeDao, CustomerDaoImpl&#10;create CustomerController&#10;creat jsp Page : list-customer.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="create CustomeDao, CustomerDaoImpl&#10;create CustomerController&#10;creat jsp Page : list-customer.jsp" />
+    <MESSAGE value="add service layer(CustomerService)&#10;add css(but it doesn't work at the moment)&#10;add a new button for for adding customers(but it also doesn't at the moment)" />
+    <MESSAGE value="add update customers function" />
+    <option name="LAST_COMMIT_MESSAGE" value="add update customers function" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/luv2code/springdemo/controller/CustomerController.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/luv2code/springdemo/controller/CustomerController.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/luv2code/springdemo/controller/CustomerController.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

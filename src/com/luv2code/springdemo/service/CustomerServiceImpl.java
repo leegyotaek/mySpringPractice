@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-public class CustomerServiceImpl implements CustomeService {
+public class CustomerServiceImpl implements CustomerService {
 
     @Autowired
     private CustomerDAO customerDAO;
@@ -32,6 +32,22 @@ public class CustomerServiceImpl implements CustomeService {
     @Transactional
     public Customer getCustomer(int theId) {
         return customerDAO.getCustomer(theId);
+    }
+
+    @Override
+    @Transactional
+    public void deleteCustomer(int theId) {
+
+        customerDAO.deleteCustomer(theId);
+
+    }
+
+    @Override
+    @Transactional
+    public List<Customer> searchCustomers(String theSearchName) {
+
+        return customerDAO.searchCustomers(theSearchName);
+
     }
 
 }

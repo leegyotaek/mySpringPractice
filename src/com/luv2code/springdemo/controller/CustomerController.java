@@ -1,10 +1,8 @@
 package com.luv2code.springdemo.controller;
 
-import com.luv2code.springdemo.dao.CustomerDAO;
 import com.luv2code.springdemo.entity.Customer;
-import com.luv2code.springdemo.service.CustomeService;
+import com.luv2code.springdemo.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -17,11 +15,11 @@ import java.util.List;
 public class CustomerController {
 
 	@Autowired
-	private CustomeService customeService;
+	private CustomerService customerService;
 
 	@GetMapping("/list")
 	public String listCustomers(Model theModel) {
-		List<Customer> customers = customeService.getCustomers();
+		List<Customer> customers = customerService.getCustomers();
 		theModel.addAttribute("customers", customers);
 		return "list-customers";
 	}
@@ -38,18 +36,37 @@ public class CustomerController {
 
 		// save the Customer using ourt service
 
-		customeService.saveCustomer(theCustomer);
+		customerService.saveCustomer(theCustomer);
 
 		return "redirect:/customer/list";
 	}
 
 	@GetMapping("/showFormForUpdate")
 	public String showFormForUpdate(@RequestParam("customerId") int theId, Model theModel){
-		Customer theCustomer = customeService.getCustomer(theId);
 
+		Customer theCustomer = customerService.getCustomer(theId);
 		theModel.addAttribute("customer", theCustomer);
 
 		return "customer-form";
+	}
+
+	@GetMapping("/delete")
+	public String deleteCustomer(@RequestParam("customerId") int theId){
+
+		// delete the customer
+		customerService.deleteCustomer(theId);
+		return "redirect:/customer/list";
+
+	}
+
+	@GetMapping("/search")
+	public String searchCustomers(@RequestParam("theSearchName") String theSearchName, Model theModel){
+		List<Customer> theCustomers = customerService.searchCustomers(theSearchName);
+
+		theModel.addAttribute("customers", theCustomers);
+
+		return "list-customers";
+
 	}
 
 
