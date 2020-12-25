@@ -7,17 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6c162e-78a4-457b-93ac-8b7ac47a319d" name="Default Changelist" comment="add update customers function">
+      <change afterPath="$PROJECT_DIR$/src/com/luv2code/springdemo/aspect/CRMLoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_12.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_customer_tracker_war_exploded/WEB-INF/classes/com/luv2code/springdemo/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_customer_tracker_war_exploded/WEB-INF/classes/com/luv2code/springdemo/controller/CustomerController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/web_customer_tracker_war_exploded/WEB-INF/spring-mvc-crud-demo-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_customer_tracker_war_exploded/WEB-INF/spring-mvc-crud-demo-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_customer_tracker_war_exploded/WEB-INF/view/list-customers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_customer_tracker_war_exploded/WEB-INF/view/list-customers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/web-customer-tracker/com/luv2code/springdemo/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/web-customer-tracker/com/luv2code/springdemo/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luv2code/springdemo/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luv2code/springdemo/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luv2code/springdemo/dao/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luv2code/springdemo/dao/CustomerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luv2code/springdemo/dao/CustomerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luv2code/springdemo/dao/CustomerDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luv2code/springdemo/service/CustomeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luv2code/springdemo/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/luv2code/springdemo/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/luv2code/springdemo/service/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/list-customers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/list-customers.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/spring-mvc-crud-demo-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/spring-mvc-crud-demo-servlet.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +37,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -64,8 +58,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../스프링/04-spring-mvc-crud-5/solution-code-spring-mvc-CRUD-CRM-update-customer/WebContent/WEB-INF/view/list-customers.jsp" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/aspectjweaver-1.8.13.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -186,6 +180,8 @@
       <workItem from="1608271227164" duration="7539000" />
       <workItem from="1608283531454" duration="412000" />
       <workItem from="1608389900828" duration="2358000" />
+      <workItem from="1608775596943" duration="2646000" />
+      <workItem from="1608873423432" duration="292000" />
     </task>
     <task id="LOCAL-00001" summary="create CustomeDao, CustomerDaoImpl&#10;create CustomerController&#10;creat jsp Page : list-customer.jsp">
       <created>1608036442296</created>

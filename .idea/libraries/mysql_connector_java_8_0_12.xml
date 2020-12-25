@@ -46,6 +46,7 @@
       <root url="jar://$USER_HOME$/Downloads/hibernate/mchange-commons-java-0.2.19.jar!/" />
       <root url="jar://$USER_HOME$/Downloads/hibernate/stax-ex-1.8.jar!/" />
       <root url="jar://$USER_HOME$/Downloads/hibernate/txw2-2.3.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/aspectjweaver-1.8.13.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/Downloads/spring 5.0.2/spring-aop-5.0.2.RELEASE-javadoc.jar!/" />
